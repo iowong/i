@@ -6,17 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <script>
-    var click = ["https://www.1688.com/","https://www.baidu.com/", "https://www.google.com.hk/imghp", "https://tineye.com/"];
-
-
-for (var i = 1; i <= 4; i++) {
-    setTimeout(() => {
-      window.open(click[i-1],'_blank')
-    }, 500);
-}
-    
-
-
+var click = ["https://www.1688.com/","https://www.baidu.com/", "https://www.google.com.hk/imghp", "https://tineye.com/"];
+var i = 0;
+let intervalId = setInterval(function() {
+  i++;
+window.open(click[i-1],'_blank')
+  if (i > 3) {
+    clearInterval(intervalId);
+  }
+}, 100);
     
   </script>
 </head>

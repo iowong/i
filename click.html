@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <script>
-var click = ["https://www.1688.com/","https://www.baidu.com/", "https://www.google.com.hk/imghp", "https://tineye.com/"];
+     window.open('https://www.baidu.com/','_blank')
+var click = ["https://www.1688.com/", "https://tineye.com/", "https://www.google.com.hk/imghp","https://yandex.ru/images"];
 var i = 0;
 let intervalId = setInterval(function() {
   i++;
@@ -14,8 +15,8 @@ window.open(click[i-1],'_blank')
   if (i > 3) {
     clearInterval(intervalId);
   }
-}, 100);
-    
+}, 10);
+   
   </script>
 </head>
 <body>
